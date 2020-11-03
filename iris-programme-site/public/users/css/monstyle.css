@@ -1,0 +1,276 @@
+.body{background-color: rgba(117, 190, 218, 0.0);
+    color: red !important;}
+  .ftk_logo1{
+      height: 100px;
+      margin-left: -50px;
+
+
+  }
+
+  .ftk_font_menu{
+      font-size: 15px !important;
+  }
+  .ftk_border{
+    border: 3px solid red;
+    height: 200px;
+    width: 200px;
+
+  }
+  .ftk_sticky{
+      position: fixed !important;
+      position: fixed !important;
+
+     background-color:white;
+     width: 98%;
+     margin-left: -8%;
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+   }
+
+   .ftk_espace{
+     margin-left: 15px !important;
+   }
+
+  .ftk_header_text{
+      text-align: center !important;
+      color: white;
+  }
+  .ftk_iris_text1{
+      color: rgb(255, 255, 255) !important;
+  }
+  .ftk_iris_text2{
+      color: white;
+  }
+  .ftk_marge{
+    margin-top: 200px !important;
+  }
+  /*- 3 cadre du menu  mon emploi du temps*/
+  .ftk_cadre{
+    width: 100px;
+    height: 200px ;
+    margin-left: 80px;
+  }
+
+  .ftk_border{
+    height: 130px;
+    width: 130px;
+
+    border-radius: 200px 200px 17px 200px;
+  -moz-border-radius: 200px 200px 17px 200px;
+  -webkit-border-radius: 200px 200px 17px 200px;
+  border: 4px solid #2e9e30
+  }
+
+
+  /*Accueil transition*/
+  /* The old, slow way. */
+  .slow-transition {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      transition: box-shadow 500ms;
+    }
+
+    .slow-transition:hover {
+      box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.734);
+    }
+
+    /* The fast, new way! */
+    .fast-transition {
+      position: relative; /* For positioning the pseudo-element */
+      box-shadow: 0 0 10px 0 rgba(148, 240, 72, 0.3);
+    }
+
+    .fast-transition::before {
+      /* Position the pseudo-element. */
+      content: ' ';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      /* Create the box shadow at expanded size. */
+      box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+
+      /* Hidden by default. */
+      opacity: 0;
+      transition: opacity 500ms;
+    }
+
+    .fast-transition:hover::before {
+      /* Show the pseudo-element on hover. */
+      opacity: 2;
+    }
+
+    /***************UI BOUTON************************/
+
+
+  .stretch, .button:after, .button:before {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .button {
+      background: #6bc1dba1;
+      margin-left: 19px;
+      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #09ea54, #04d06a), color-stop(100%,  #04d06a));
+      background-image: -moz-linear-gradient(left, #09ea54, #04d06a);
+      background-image: -webkit-linear-gradient(left, #09ea54, #04d06a);
+      background-image: linear-gradient(to right, #09ea54, #04d06a);
+      border-radius: 0.5em;
+      -moz-transition: opacity 1000ms;
+      -o-transition: opacity 1000ms;
+      -webkit-transition: opacity 1000ms;
+      transition: opacity 1000ms;
+      border: none;
+      padding: 2px;
+      color: #FAF15D;
+      font-weight: bold;
+      letter-spacing: 150%;
+      outline: none;
+      overflow: hidden;
+
+      cursor: pointer;
+      z-index: 1000;
+
+    }
+    .button:after {
+      -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+      -webkit-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+      box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
+      background: #ece894;
+      content: "";
+      height: 0.01px;
+      opacity: 0;
+    }
+    .button:before {
+      content: "";
+      opacity: 0;
+    }
+    .button:hover {
+      -webkit-animation: glitch 2050ms infinite;
+    }
+    .button:hover:before {
+      opacity: 1;
+    }
+    .button:hover:after {
+      -webkit-animation: scan 2s infinite;
+      opacity: 1;
+    }
+
+    @-webkit-keyframes glitch {
+      0% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+      }
+      5% {
+        -moz-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        transform: skewX(2deg);
+        opacity: 0.75;
+      }
+      10% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+      }
+      15% {
+        -moz-transform: skewX(-5deg);
+        -ms-transform: skewX(-5deg);
+        -webkit-transform: skewX(-5deg);
+        transform: skewX(-5deg);
+        opacity: 0.75;
+      }
+      20% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+      }
+      45% {
+        -moz-transform: skewX(3deg);
+        -ms-transform: skewX(3deg);
+        -webkit-transform: skewX(3deg);
+        transform: skewX(3deg);
+        opacity: 0.75;
+      }
+      50% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+      }
+      55% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 0.75;
+      }
+      60% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+      }
+      75% {
+        -moz-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        transform: skewX(2deg);
+      }
+      80% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+      }
+      85% {
+        -moz-transform: skewX(-8deg);
+        -ms-transform: skewX(-8deg);
+        -webkit-transform: skewX(-8deg);
+        transform: skewX(-8deg);
+        opacity: 0.75;
+      }
+      90% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+        opacity: 1;
+      }
+      100% {
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        transform: skewX(0deg);
+      }
+    }
+    @-webkit-keyframes scan {
+      0% {
+        top: 0%;
+      }
+      50% {
+        top: 97%;
+      }
+      100% {
+        top: 0%;
+      }
+    }
+
+    a:link, a:visited
+    {
+        color: white;
+        text-decoration: none;
+    }
+
